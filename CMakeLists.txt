@@ -198,3 +198,11 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(joystick src/joystick.cpp)
+target_link_libraries(joystick ${catkin_LIBRARIES})
+add_dependencies(joystick marvin_generate_messages_cpp)
+
+add_executable(gui src/gui.cpp)
+target_link_libraries(gui ${catkin_LIBRARIES})
+add_dependencies(gui marvin_generate_messages_cpp)
