@@ -1,3 +1,3 @@
-/home/andrew/CLionProjects/gpsdReader/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/andrew/CLionProjects/gpsdReader/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/andrew/CLionProjects/gpsdReader/cmake-build-debug/CMakeFiles/gpsdReader.dir
+/home/andrew/mARVin/gpsProj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/andrew/mARVin/gpsProj/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/mARVin/gpsProj/cmake-build-debug/CMakeFiles/gpsdReader.dir

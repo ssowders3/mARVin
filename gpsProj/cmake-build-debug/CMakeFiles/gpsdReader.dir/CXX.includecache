@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/andrew/CLionProjects/gpsdReader/main.cpp
+/home/andrew/mARVin/gpsProj/main.cpp
 iostream
 -
 stdlib.h

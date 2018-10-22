@@ -1,3 +1,12 @@
+/* Program to read input from Android GPS application SHARE GPS
+ * Latest Author: Andrew Tzeng
+ *
+ * REQUIREMENTS:
+ * SHARE GPS on Android Phone
+ * Open Share GPS and click on connection to enable listening
+ * Run gpsBash script
+ */
+
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -15,8 +24,15 @@ using namespace std;
 
 std::mutex gpsData; //Mutex for saving lat and long data
 
-string latitude, longitude;
+float latitude, longitude;
 int timestamp;
+
+/* getCmdOut Method
+ *
+ * Input: Shell Command
+ * Global variables timestamp, longitude, and latitude are edited in function
+ *
+ */
 
 void getCmdOut(const char* cmd) {
     array<char, 128> buffer;
@@ -27,13 +43,11 @@ void getCmdOut(const char* cmd) {
     while (!feof(pipe.get())) {
         if (fgets(buffer.data(), 128, pipe.get()) != nullptr) {
             temp = buffer.data();
-            if(temp.find("GPRMC") != std::string::npos){
+            if (temp.find("GPRMC") != std::string::npos) {
                 result += temp;
-                timestamp = atoi(temp.substr(7,7).erase(6,7).c_str());
-                latitude = temp.substr(16,16).erase();
-                //longitude =
-                //cout << latitude<<endl;
-                //cout<<buffer.data()<<endl;
+                timestamp = atoi(temp.substr(7, 6).c_str());
+                latitude = atof(temp.substr(16,11).c_str());
+                longitude = atof(temp.substr(30,11).c_str());
             }
         }
     }
@@ -45,7 +59,7 @@ int main() {
     thread t1(getCmdOut,"nc localhost 20175 ");
     //std::cout << latitude << std::endl;
     while(1) {
-        std::cout << "timestamp = " << timestamp << endl;
+        std::cout << "latitude = " << latitude << endl;
         std::cin.ignore();
     }
     //std::cout << longitude << std::endl;
