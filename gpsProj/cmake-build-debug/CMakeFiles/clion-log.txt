@@ -1,0 +1,6 @@
+/home/andrew/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/andrew/CLionProjects/gpsdReader
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/CLionProjects/gpsdReader/cmake-build-debug
