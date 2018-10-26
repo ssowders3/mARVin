@@ -11,7 +11,11 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+<<<<<<< HEAD
   message_generation
+=======
+  sensor_msgs
+>>>>>>> 151f79914ac166d174953a8e5f841b0bb8d4ab93
 )
 
 ## System dependencies are found with CMake's conventions
@@ -48,6 +52,7 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
+<<<<<<< HEAD
  add_message_files(
    FILES
 #   Message1.msg
@@ -62,6 +67,20 @@ find_package(catkin REQUIRED COMPONENTS
 #   Service2.srv
    AddTwoInts.srv
  )
+=======
+# add_message_files(
+#   FILES
+#   Message1.msg
+#   Message2.msg
+# )
+
+## Generate services in the 'srv' folder
+# add_service_files(
+#   FILES
+#   Service1.srv
+#   Service2.srv
+# )
+>>>>>>> 151f79914ac166d174953a8e5f841b0bb8d4ab93
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -71,10 +90,17 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
+<<<<<<< HEAD
  generate_messages(
    DEPENDENCIES
    std_msgs
  )
+=======
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs
+# )
+>>>>>>> 151f79914ac166d174953a8e5f841b0bb8d4ab93
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -108,7 +134,11 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES marvin
+<<<<<<< HEAD
   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs
+=======
+#  CATKIN_DEPENDS roscpp rospy std_msgs
+>>>>>>> 151f79914ac166d174953a8e5f841b0bb8d4ab93
 #  DEPENDS system_lib
 )
 
@@ -201,6 +231,7 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+<<<<<<< HEAD
 add_executable(talker src/talker.cpp)
 target_link_libraries(talker ${catkin_LIBRARIES})
 add_dependencies(talker beginner_tutorials_generate_messages_cpp)
@@ -208,3 +239,12 @@ add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 add_dependencies(listener beginner_tutorials_generate_messages_cpp)
+=======
+add_executable(joystick src/joystick.cpp)
+target_link_libraries(joystick ${catkin_LIBRARIES})
+add_dependencies(joystick marvin_generate_messages_cpp)
+
+add_executable(gui src/gui.cpp)
+target_link_libraries(gui ${catkin_LIBRARIES})
+add_dependencies(gui marvin_generate_messages_cpp)
+>>>>>>> 151f79914ac166d174953a8e5f841b0bb8d4ab93
