@@ -1,2 +1,0 @@
-# mARVin
-Our adorable TUGV
