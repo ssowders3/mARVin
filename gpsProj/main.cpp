@@ -19,6 +19,9 @@
 #include <thread>
 #include <mutex>
 
+#include "ros/ros.h"
+#include "sensor_msgs
+
 using namespace std;
 
 

@@ -1,4 +1,4 @@
-/home/andrew/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/andrew/mARVin/gpsProj
+/home/andrew/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/andrew/catkin_ws/src/mARVin/gpsProj
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -22,4 +22,4 @@
 -- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/andrew/mARVin/gpsProj/cmake-build-debug
+-- Build files have been written to: /home/andrew/catkin_ws/src/mARVin/gpsProj/cmake-build-debug
