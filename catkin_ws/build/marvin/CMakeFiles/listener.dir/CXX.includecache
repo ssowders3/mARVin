@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/marvin/catkin_ws/src/marvin/src/listener.cpp
+/home/marvin/mARVin/catkin_ws/src/marvin/src/listener.cpp
 ros/ros.h
-/home/marvin/catkin_ws/src/marvin/src/ros/ros.h
+/home/marvin/mARVin/catkin_ws/src/marvin/src/ros/ros.h
 std_msgs/String.h
-/home/marvin/catkin_ws/src/marvin/src/std_msgs/String.h
+/home/marvin/mARVin/catkin_ws/src/marvin/src/std_msgs/String.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

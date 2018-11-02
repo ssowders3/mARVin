@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marvin/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/marvin/mARVin/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marvin/catkin_ws/build
+CMAKE_BINARY_DIR = /home/marvin/mARVin/catkin_ws/build
 
 # Utility rule file for marvin_generate_messages.
 
@@ -63,10 +63,10 @@ marvin/CMakeFiles/marvin_generate_messages.dir/build: marvin_generate_messages
 .PHONY : marvin/CMakeFiles/marvin_generate_messages.dir/build
 
 marvin/CMakeFiles/marvin_generate_messages.dir/clean:
-	cd /home/marvin/catkin_ws/build/marvin && $(CMAKE_COMMAND) -P CMakeFiles/marvin_generate_messages.dir/cmake_clean.cmake
+	cd /home/marvin/mARVin/catkin_ws/build/marvin && $(CMAKE_COMMAND) -P CMakeFiles/marvin_generate_messages.dir/cmake_clean.cmake
 .PHONY : marvin/CMakeFiles/marvin_generate_messages.dir/clean
 
 marvin/CMakeFiles/marvin_generate_messages.dir/depend:
-	cd /home/marvin/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marvin/catkin_ws/src /home/marvin/catkin_ws/src/marvin /home/marvin/catkin_ws/build /home/marvin/catkin_ws/build/marvin /home/marvin/catkin_ws/build/marvin/CMakeFiles/marvin_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marvin/mARVin/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marvin/mARVin/catkin_ws/src /home/marvin/mARVin/catkin_ws/src/marvin /home/marvin/mARVin/catkin_ws/build /home/marvin/mARVin/catkin_ws/build/marvin /home/marvin/mARVin/catkin_ws/build/marvin/CMakeFiles/marvin_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : marvin/CMakeFiles/marvin_generate_messages.dir/depend
 
