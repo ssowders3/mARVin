@@ -1,0 +1,8 @@
+prefix=/home/marvin/catkin_ws/install
+
+Name: marvin
+Description: Description of marvin
+Version: 0.0.0
+Cflags: -I/home/marvin/catkin_ws/install/include
+Libs: -L/home/marvin/catkin_ws/install/lib 
+Requires: message_runtime
