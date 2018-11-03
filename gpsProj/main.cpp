@@ -19,17 +19,13 @@
 #include <thread>
 #include <mutex>
 
-#include "ros/ros.h"
-#include "sensor_msgs
-
 using namespace std;
 
 
 std::mutex gpsData; //Mutex for saving lat and long data
 
-float latitude, longitude;
-int timestamp;
-
+string latitude, longitude, altitude;
+int status;
 /* getCmdOut Method
  *
  * Input: Shell Command
@@ -46,11 +42,13 @@ void getCmdOut(const char* cmd) {
     while (!feof(pipe.get())) {
         if (fgets(buffer.data(), 128, pipe.get()) != nullptr) {
             temp = buffer.data();
-            if (temp.find("GPRMC") != std::string::npos) {
+            if (temp.find("GPGGA") != std::string::npos) {
                 result += temp;
-                timestamp = atoi(temp.substr(7, 6).c_str());
-                latitude = atof(temp.substr(16,11).c_str());
-                longitude = atof(temp.substr(30,11).c_str());
+                latitude = temp.substr(14,13);
+                longitude = temp.substr(28,14);
+                altitude = temp.substr(49,5);
+                std::cout<<temp.substr(7,1)<<endl;
+                status = atoi(temp.substr(7,1).c_str());
             }
         }
     }
@@ -62,7 +60,7 @@ int main() {
     thread t1(getCmdOut,"nc localhost 20175 ");
     //std::cout << latitude << std::endl;
     while(1) {
-        std::cout << "latitude = " << latitude << endl;
+        std::cout << "status = " << status << endl;
         std::cin.ignore();
     }
     //std::cout << longitude << std::endl;
