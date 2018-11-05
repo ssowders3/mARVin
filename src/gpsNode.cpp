@@ -6,6 +6,7 @@
 #include "sensor_msgs/NavSatFix.h"
 #include "sensor_msgs/NavSatStatus.h"
 #include <std_msgs/Float64.h>
+#include "std_msgs/Header.h"
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -21,6 +22,7 @@ sensor_msgs::NavSatStatus navStatus;
 float latitude, longitude, altitude;
 float position_covariance[9] = {0,0,0,0,0,0,0,0,0};
 uint8_t position_covariance_type = 0;
+std_msgs::Header header;
 
 using namespace std;
 
@@ -50,13 +52,16 @@ int main( int argc, char **argv)
 {
     ros::init(argc, argv, "gpsNode");
     ros::NodeHandle n;
-    ros::Publisher gpsPub = n.advertise<sensor_msgs::NavSatFix>("gpsmeas", 1000);
+    ros::Publisher gpsPub = n.advertise<sensor_msgs::NavSatFix>("fix", 1000);
     ros::Rate loop_rate(1);
 
     int count = 0;
     thread t1(getCmdOut,"nc localhost 20175 ");
+    
     while ( ros::ok())
     {
+        header.stamp = ros::Time::now();
+        header.frame_id = 1;
         sensor_msgs::NavSatFix msg;
         msg.position_covariance[0] = 0;
         msg.latitude = latitude;
@@ -64,6 +69,7 @@ int main( int argc, char **argv)
         msg.altitude = altitude;
         msg.position_covariance_type = 0;
         msg.status = navStatus;
+        msg.header = header;
 
  
          
