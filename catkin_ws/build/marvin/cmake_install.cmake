@@ -1,8 +1,8 @@
-# Install script for directory: /home/marvin/catkin_ws/src/marvin
+# Install script for directory: /home/marvin/mARVin/catkin_ws/src/marvin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/marvin/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/marvin/mARVin/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/msg" TYPE FILE FILES "/home/marvin/catkin_ws/src/marvin/msg/lidar.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/msg" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/marvin/msg/lidar.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/cmake" TYPE FILE FILES "/home/marvin/catkin_ws/build/marvin/catkin_generated/installspace/marvin-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/cmake" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/marvin/catkin_generated/installspace/marvin-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/marvin/catkin_ws/devel/include/marvin")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/include/marvin")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/marvin/catkin_ws/devel/share/roseus/ros/marvin")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/share/roseus/ros/marvin")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/marvin/catkin_ws/devel/share/common-lisp/ros/marvin")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/share/common-lisp/ros/marvin")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/marvin/catkin_ws/devel/share/gennodejs/ros/marvin")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/marvin")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/marvin/catkin_ws/devel/lib/python2.7/dist-packages/marvin")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/marvin")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/marvin/catkin_ws/devel/lib/python2.7/dist-packages/marvin")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/marvin")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/marvin/catkin_ws/build/marvin/catkin_generated/installspace/marvin.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/marvin/catkin_generated/installspace/marvin.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/cmake" TYPE FILE FILES "/home/marvin/catkin_ws/build/marvin/catkin_generated/installspace/marvin-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/cmake" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/marvin/catkin_generated/installspace/marvin-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin/cmake" TYPE FILE FILES
-    "/home/marvin/catkin_ws/build/marvin/catkin_generated/installspace/marvinConfig.cmake"
-    "/home/marvin/catkin_ws/build/marvin/catkin_generated/installspace/marvinConfig-version.cmake"
+    "/home/marvin/mARVin/catkin_ws/build/marvin/catkin_generated/installspace/marvinConfig.cmake"
+    "/home/marvin/mARVin/catkin_ws/build/marvin/catkin_generated/installspace/marvinConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin" TYPE FILE FILES "/home/marvin/catkin_ws/src/marvin/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/marvin" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/marvin/package.xml")
 endif()
 

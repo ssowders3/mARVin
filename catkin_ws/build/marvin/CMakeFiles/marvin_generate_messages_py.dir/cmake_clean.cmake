@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/marvin_generate_messages_py"
-  "/home/marvin/catkin_ws/devel/lib/python2.7/dist-packages/marvin/msg/_lidar.py"
-  "/home/marvin/catkin_ws/devel/lib/python2.7/dist-packages/marvin/msg/__init__.py"
+  "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/marvin/msg/_lidar.py"
+  "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/marvin/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.
