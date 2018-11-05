@@ -1,0 +1,4 @@
+rosserial-melodic-devel/rosserial_embeddedlinux
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_embeddedlinux/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig-version.cmake
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_embeddedlinux/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig.cmake
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_embeddedlinux/lib/pkgconfig/rosserial_embeddedlinux.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_embeddedlinux.pc
