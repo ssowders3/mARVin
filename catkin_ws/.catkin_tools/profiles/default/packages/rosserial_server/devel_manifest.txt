@@ -1,7 +1,7 @@
 rosserial-melodic-devel/rosserial_server
-/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake
-/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_server/cmake/rosserial_serverConfig.cmake
 /home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/lib/pkgconfig/rosserial_server.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_server.pc
 /home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/lib/rosserial_server/socket_node /home/aalla/mARVin/catkin_ws/devel/lib/rosserial_server/socket_node
-/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/lib/rosserial_server/serial_node /home/aalla/mARVin/catkin_ws/devel/lib/rosserial_server/serial_node
 /home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/lib/rosserial_server/udp_socket_node /home/aalla/mARVin/catkin_ws/devel/lib/rosserial_server/udp_socket_node
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/lib/rosserial_server/serial_node /home/aalla/mARVin/catkin_ws/devel/lib/rosserial_server/serial_node
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_server/cmake/rosserial_serverConfig.cmake
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake

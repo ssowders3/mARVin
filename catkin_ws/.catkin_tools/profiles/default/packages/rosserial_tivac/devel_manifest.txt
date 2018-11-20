@@ -1,5 +1,5 @@
 rosserial-melodic-devel/rosserial_tivac
-/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivacConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_tivac/cmake/rosserial_tivacConfig-version.cmake
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_tivac/lib/pkgconfig/rosserial_tivac.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_tivac.pc
 /home/aalla/mARVin/catkin_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivac-extras.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_tivac/cmake/rosserial_tivac-extras.cmake
 /home/aalla/mARVin/catkin_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivacConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_tivac/cmake/rosserial_tivacConfig.cmake
-/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_tivac/lib/pkgconfig/rosserial_tivac.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_tivac.pc
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_tivac/share/rosserial_tivac/cmake/rosserial_tivacConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_tivac/cmake/rosserial_tivacConfig-version.cmake
