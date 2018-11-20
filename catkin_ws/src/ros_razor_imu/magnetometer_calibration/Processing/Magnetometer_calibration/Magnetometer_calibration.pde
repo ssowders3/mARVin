@@ -1,3 +1,6 @@
+import org.ejml.*;
+import org.ejml.simple.*;
+
 /******************************************************************************************
 * Magnetometer Sampling Sketch for Razor AHRS v1.4.2
 * 9 Degree of Measurement Attitude and Heading Reference System
@@ -32,9 +35,6 @@
   More info on installing libraries in Processing: http://wiki.processing.org/w/How_to_Install_a_Contributed_Library
   Tested to be working with EJML 0.17 and 0.23.
 */
-import org.ejml.data.*;
-import org.ejml.simple.*;
-import org.ejml.ops.*;
 
 // IF THE SKETCH CRASHES OR HANGS ON STARTUP, MAKE SURE YOU ARE USING THE RIGHT SERIAL PORT:
 // 1. Have a look at the Processing console output of this sketch.

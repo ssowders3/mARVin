@@ -18,12 +18,14 @@
 #include <array>
 #include <thread>
 #include <bits/stdc++.h>
+#include <cmath>
 
 sensor_msgs::NavSatStatus navStatus;
 float latitude, longitude, altitude;
 float position_covariance[9] = {0,0,0,0,0,0,0,0,0};
 uint8_t position_covariance_type = 0;
 std_msgs::Header header;
+float hdop = 1.5;
 
 using namespace std;
 
@@ -58,8 +60,8 @@ int main( int argc, char **argv)
     system("adb forward tcp:20175 tcp:50000");
     ros::init(argc, argv, "gpsNode");
     ros::NodeHandle n;
-    ros::Publisher gpsPub = n.advertise<sensor_msgs::NavSatFix>("fix", 1000);
-    ros::Rate loop_rate(1);
+    ros::Publisher gpsPub = n.advertise<sensor_msgs::NavSatFix>("fix", 10);
+    ros::Rate loop_rate(10);
 
     int count = 0;
     thread t1(getCmdOut,"nc localhost 20175 ");
@@ -69,11 +71,13 @@ int main( int argc, char **argv)
         header.stamp = ros::Time::now();
         header.frame_id = 1;
         sensor_msgs::NavSatFix msg;
-        msg.position_covariance[0] = 0;
+        msg.position_covariance[0] = pow(hdop,2);
+        msg.position_covariance[4] = pow(hdop,2);
+        msg.position_covariance[8] = pow((2*hdop),2);
         msg.latitude = latitude;
         msg.longitude = longitude;
         msg.altitude = altitude;
-        msg.position_covariance_type = 0;
+        msg.position_covariance_type = 1;
         msg.status = navStatus;
         msg.header = header;
 

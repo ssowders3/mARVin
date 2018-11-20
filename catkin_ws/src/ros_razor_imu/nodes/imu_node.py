@@ -32,7 +32,7 @@ import serial
 import string
 import math
 import sys
-
+import pdb
 #from time import time
 from sensor_msgs.msg import Imu
 from tf.transformations import quaternion_from_euler
@@ -54,7 +54,7 @@ def reconfig_callback(config, level):
 
 rospy.init_node("razor_node")
 #We only care about the most recent measurement, i.e. queue_size=1
-pub = rospy.Publisher('imu', Imu, queue_size=1)
+pub = rospy.Publisher('imu_data', Imu, queue_size=1)
 srv = Server(imuConfig, reconfig_callback)  # define dynamic_reconfigure callback
 diag_pub = rospy.Publisher('diagnostics', DiagnosticArray, queue_size=1)
 diag_pub_time = rospy.get_time();
@@ -217,6 +217,17 @@ for x in range(0, 200):
     line = ser.readline()
 rospy.loginfo("Publishing IMU data...")
 #f = open("raw_imu_data.log", 'w')
+last_yaw = 0.0
+last_pitch = 0.0
+last_roll = 0.0
+
+last_ax = 0.0
+last_ay = 0.0
+last_az = 0.0
+
+last_wx = 0.0
+last_wy = 0.0
+last_wz = 0.0
 
 while not rospy.is_shutdown():
     line = ser.readline()
@@ -225,29 +236,80 @@ while not rospy.is_shutdown():
     words = string.split(line,",")    # Fields split
     if len(words) > 2:
         #in AHRS firmware z axis points down, in ROS z axis points up (see REP 103)
-        yaw_deg = -float(words[0])
+        try:
+            yaw_deg = -float(words[0])
+        except:
+            yaw_deg = last_yaw
+        else:
+            last_yaw = yaw_deg
         yaw_deg = yaw_deg + imu_yaw_calibration
         if yaw_deg > 180.0:
             yaw_deg = yaw_deg - 360.0
         if yaw_deg < -180.0:
             yaw_deg = yaw_deg + 360.0
+
         yaw = yaw_deg*degrees2rad
         #in AHRS firmware y axis points right, in ROS y axis points left (see REP 103)
-        pitch = -float(words[1])*degrees2rad
-        roll = float(words[2])*degrees2rad
+        try:
+            pitch = -float(words[1])*degrees2rad
+        except: 
+            pitch = last_pitch
+        else:
+            last_pitch = pitch
+
+        try:
+            roll = float(words[2])*degrees2rad
+        except:
+            roll = last_roll
+        else:
+            last_roll = roll
 
         # Publish message
         # AHRS firmware accelerations are negated
         # This means y and z are correct for ROS, but x needs reversing
-        imuMsg.linear_acceleration.x = -float(words[3]) * accel_factor
-        imuMsg.linear_acceleration.y = float(words[4]) * accel_factor
-        imuMsg.linear_acceleration.z = float(words[5]) * accel_factor
+        try:
+            imuMsg.linear_acceleration.x = -float(words[3]) * accel_factor
+        except:
+            imuMsg.linear_acceleration.x = last_ax
+        else:
+            last_ax = imuMsg.linear_acceleration.x
 
-        imuMsg.angular_velocity.x = float(words[6])
-        #in AHRS firmware y axis points right, in ROS y axis points left (see REP 103)
-        imuMsg.angular_velocity.y = -float(words[7])
-        #in AHRS firmware z axis points down, in ROS z axis points up (see REP 103) 
-        imuMsg.angular_velocity.z = -float(words[8])
+        try:
+            imuMsg.linear_acceleration.y = float(words[4]) * accel_factor
+        except:
+            imuMsg.linear_acceleration.y = last_ay
+        else:
+            last_ay = imuMsg.linear_acceleration.y
+
+        try:
+            imuMsg.linear_acceleration.z = float(words[5]) * accel_factor
+        except:
+            imuMsg.linear_acceleration.z = last_az
+        else:
+            last_az = imuMsg.linear_acceleration.z
+
+        try:
+            imuMsg.angular_velocity.x = float(words[6])
+        except:
+            imuMsg.angular_velocity.x = last_wx
+        else:
+            last_wx = imuMsg.angular_velocity.x
+        
+        try:
+            #in AHRS firmware y axis points right, in ROS y axis points left (see REP 103)
+            imuMsg.angular_velocity.y = -float(words[7])
+        except:
+            imuMsg.angular_velocity.y = last_wy
+        else:
+            last_wy = imuMsg.angular_velocity.y
+
+        try:
+            #in AHRS firmware z axis points down, in ROS z axis points up (see REP 103) 
+            imuMsg.angular_velocity.z = -float(words[8])
+        except:
+            imuMsg.angular_velocity.z = last_wz
+        else:
+            last_wz = imuMsg.angular_velocity.z
 
     q = quaternion_from_euler(roll,pitch,yaw)
     imuMsg.orientation.x = q[0]
@@ -255,7 +317,7 @@ while not rospy.is_shutdown():
     imuMsg.orientation.z = q[2]
     imuMsg.orientation.w = q[3]
     imuMsg.header.stamp= rospy.Time.now()
-    imuMsg.header.frame_id = 'base_imu_link'
+    imuMsg.header.frame_id = 'base_footprint'
     imuMsg.header.seq = seq
     seq = seq + 1
     pub.publish(imuMsg)
