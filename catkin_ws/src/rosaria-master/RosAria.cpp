@@ -539,6 +539,14 @@ void RosAriaNode::publish()
   position.twist.twist.linear.y = robot->getLatVel()/1000.0;
   position.twist.twist.angular.z = robot->getRotVel()*M_PI/180;
   
+  position.pose.covariance.elems[0] = 0.1;
+  position.pose.covariance.elems[7] = 0.1;
+  position.pose.covariance.elems[14] = 99999.0;
+  position.pose.covariance.elems[21] = 99999.0;
+  position.pose.covariance.elems[28] = 99999.0;
+  position.pose.covariance.elems[35] = 0.1;
+  position.twist.covariance = position.pose.covariance;
+
   position.header.frame_id = frame_id_odom;
   position.child_frame_id = frame_id_base_link;
   position.header.stamp = ros::Time::now();

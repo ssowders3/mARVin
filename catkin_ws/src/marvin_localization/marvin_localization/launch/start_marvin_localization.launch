@@ -1,0 +1,30 @@
+<launch>
+
+<node pkg="marvin_gps" type="gpsNode" name="gpsNode" output="screen"/>
+
+<node pkg="gps_common" type="utm_odometry_node" name="utm_odometry_node" output="screen"/>
+
+<arg name="razor_config_file" default="$(find razor_imu_9dof)/config/my_razor.yaml"/>
+<node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
+<rosparam file="$(arg razor_config_file)" command="load"/>
+</node>
+
+<node pkg = "rosaria" type = "RosAria" name = "RosAria">
+	<param name="port" value="/dev/ttyUSB0" type="string"/>
+        <remap from="RosAria/pose" to="/odom" />
+        <remap from="RosAria/cmd_vel" to="/cmd_vel" />
+</node>
+
+<node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf" output="screen">
+  <param name="output_frame" value="odom"/>
+  <param name="freq" value="30.0"/>
+  <param name="debug" value="true"/>
+  <param name="sensor_timeout" value="10.0"/>  
+  <param name="odom_used" value="true"/>
+  <param name="imu_used" value="true"/>
+  <param name="vo_used" value="false"/>
+  <param name="gps_used" value="true"/>
+
+</node>
+</launch>
+
