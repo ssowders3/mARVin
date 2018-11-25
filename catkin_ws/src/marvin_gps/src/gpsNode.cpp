@@ -70,11 +70,7 @@ int main( int argc, char **argv)
     while ( ros::ok())
     {
         header.stamp = ros::Time::now();
-<<<<<<< HEAD
         header.frame_id = "base_link";
-=======
-        header.frame_id = 1;
->>>>>>> 30e04764ca66900db521710c6b8b497a7ce2c3e7
         sensor_msgs::NavSatFix msg;
         msg.position_covariance[0] = pow(hdop,2);
         msg.position_covariance[4] = pow(hdop,2);
