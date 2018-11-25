@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/marvin_generate_messages_lisp"
-  "/home/marvin/mARVin/catkin_ws/devel/share/common-lisp/ros/marvin/msg/lidar.lisp"
+  "/home/hariank/mARVin/catkin_ws/devel/share/common-lisp/ros/marvin/msg/lidar.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

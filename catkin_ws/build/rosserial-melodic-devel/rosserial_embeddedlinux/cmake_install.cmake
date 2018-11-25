@@ -1,8 +1,8 @@
-# Install script for directory: /home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux
+# Install script for directory: /home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/marvin/mARVin/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hariank/mARVin/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,28 +33,28 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/rosserial_embeddedlinux.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/rosserial_embeddedlinux.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_embeddedlinux/cmake" TYPE FILE FILES
-    "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/rosserial_embeddedlinuxConfig.cmake"
-    "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/rosserial_embeddedlinuxConfig-version.cmake"
+    "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/rosserial_embeddedlinuxConfig.cmake"
+    "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/rosserial_embeddedlinuxConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_embeddedlinux" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_embeddedlinux" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_embeddedlinux/src" TYPE DIRECTORY FILES
-    "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux/src/ros_lib"
-    "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux/src/examples"
+    "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux/src/ros_lib"
+    "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_embeddedlinux/src/examples"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_embeddedlinux" TYPE PROGRAM FILES "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/make_libraries.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_embeddedlinux" TYPE PROGRAM FILES "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_embeddedlinux/catkin_generated/installspace/make_libraries.py")
 endif()
 

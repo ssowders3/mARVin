@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosserial_msgs_generate_messages_nodejs"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/TopicInfo.js"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/Log.js"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestServiceInfo.js"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestMessageInfo.js"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestParam.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/Log.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/TopicInfo.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestMessageInfo.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestParam.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestServiceInfo.js"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/marvin/mARVin/catkin_ws/src/rosaria_client-master/src/spin_counterclockwise.cpp
+/home/hariank/mARVin/catkin_ws/src/rosaria_client-master/src/spin_counterclockwise.cpp
 ros/ros.h
 -
 geometry_msgs/Twist.h

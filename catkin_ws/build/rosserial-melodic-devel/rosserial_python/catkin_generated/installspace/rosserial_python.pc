@@ -1,8 +1,8 @@
-prefix=/home/marvin/mARVin/catkin_ws/install
+prefix=/home/hariank/mARVin/catkin_ws/install
 
 Name: rosserial_python
 Description: Description of rosserial_python
 Version: 0.8.0
 Cflags: 
-Libs: -L/home/marvin/mARVin/catkin_ws/install/lib 
+Libs: -L/home/hariank/mARVin/catkin_ws/install/lib 
 Requires: 

@@ -1,0 +1,11 @@
+<launch>
+  <node name="static_tf0" pkg="tf" type="static_transform_publisher" args="2 0 0 0 0 0 /map /base_link 100"/>
+  <node name="static_tf1" pkg="tf" type="static_transform_publisher" args="1 0 0 0 0 0 /map /lidar1 100"/>
+  <node pkg="nav" type="lidar1" name="lidar1" />
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="controller_frequency" value="3.0" />
+    <rosparam file="/home/hariank/mARVin/catkin_ws/src/nav/params/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="/home/hariank/mARVin/catkin_ws/src/nav/params/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="/home/hariank/mARVin/catkin_ws/src/nav/params/local_costmap_params.yaml" command="load" />
+  </node>
+</launch>

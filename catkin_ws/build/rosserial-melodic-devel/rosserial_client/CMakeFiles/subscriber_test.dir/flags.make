@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_client/src -I/home/marvin/mARVin/catkin_ws/devel/include -I/opt/ros/kinetic/include 
+CXX_INCLUDES = -I/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_client/src -I/home/hariank/mARVin/catkin_ws/devel/include -I/opt/ros/kinetic/include 
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rosserial_mbed_generate_messages_nodejs"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_mbed/msg/Adc.js"
-  "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_mbed/srv/Test.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_mbed/msg/Adc.js"
+  "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosserial_mbed/srv/Test.js"
 )
 
 # Per-language clean rules from dependency scanning.

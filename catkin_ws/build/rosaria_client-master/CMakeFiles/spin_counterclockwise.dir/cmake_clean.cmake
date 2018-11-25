@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spin_counterclockwise.dir/src/spin_counterclockwise.cpp.o"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/spin_counterclockwise.pdb"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/spin_counterclockwise"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/spin_counterclockwise.pdb"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/spin_counterclockwise"
 )
 
 # Per-language clean rules from dependency scanning.

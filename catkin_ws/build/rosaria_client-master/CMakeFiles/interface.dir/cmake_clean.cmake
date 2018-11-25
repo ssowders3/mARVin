@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interface.dir/src/interface.cpp.o"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/interface.pdb"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/interface"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/interface.pdb"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/interface"
 )
 
 # Per-language clean rules from dependency scanning.

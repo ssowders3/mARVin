@@ -1,8 +1,8 @@
-# Install script for directory: /home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex
+# Install script for directory: /home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/marvin/mARVin/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hariank/mARVin/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,37 +33,37 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  include("/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/safe_execute_install.cmake")
+  include("/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/rosserial_vex_cortex.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/rosserial_vex_cortex.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex/cmake" TYPE FILE FILES
-    "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/rosserial_vex_cortexConfig.cmake"
-    "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/rosserial_vex_cortexConfig-version.cmake"
+    "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/rosserial_vex_cortexConfig.cmake"
+    "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/rosserial_vex_cortexConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex/src" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/src/ros_lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex/src" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/src/ros_lib")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_vex_cortex" TYPE PROGRAM FILES "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/scripts/genproject.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosserial_vex_cortex" TYPE PROGRAM FILES "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/scripts/genproject.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial_vex_cortex/launch/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex" TYPE PROGRAM FILES "/home/marvin/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/make_libraries.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial_vex_cortex" TYPE PROGRAM FILES "/home/hariank/mARVin/catkin_ws/build/rosserial-melodic-devel/rosserial_vex_cortex/catkin_generated/installspace/make_libraries.py")
 endif()
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/go_three_second.dir/src/go_three_second.cpp.o"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/go_three_second.pdb"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/go_three_second"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/go_three_second.pdb"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/go_three_second"
 )
 
 # Per-language clean rules from dependency scanning.

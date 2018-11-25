@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/enable_motors.dir/src/enable_motors.cpp.o"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/enable_motors.pdb"
-  "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/enable_motors"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/enable_motors.pdb"
+  "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria_client/enable_motors"
 )
 
 # Per-language clean rules from dependency scanning.

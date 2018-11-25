@@ -1,8 +1,8 @@
-# Install script for directory: /home/marvin/mARVin/catkin_ws/src/rosaria-master
+# Install script for directory: /home/hariank/mARVin/catkin_ws/src/rosaria-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/marvin/mARVin/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hariank/mARVin/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,70 +33,70 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/msg" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/rosaria-master/msg/BumperState.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/msg" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/src/rosaria-master/msg/BumperState.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rosaria" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/devel/include/rosaria/RosAriaConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/rosaria" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/devel/include/rosaria/RosAriaConfig.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/rosaria" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/rosaria" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria/__init__.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria/cfg")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/hariank/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria/cfg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/rosaria" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/rosaria" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria/cfg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/cmake" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosaria-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/cmake" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosaria-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/include/rosaria")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/devel/include/rosaria")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/share/roseus/ros/rosaria")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/devel/share/roseus/ros/rosaria")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/share/common-lisp/ros/rosaria")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/devel/share/common-lisp/ros/rosaria")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/share/gennodejs/ros/rosaria")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/devel/share/gennodejs/ros/rosaria")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/hariank/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/hariank/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosaria")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosaria.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosaria.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/cmake" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosaria-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/cmake" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosaria-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria/cmake" TYPE FILE FILES
-    "/home/marvin/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosariaConfig.cmake"
-    "/home/marvin/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosariaConfig-version.cmake"
+    "/home/hariank/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosariaConfig.cmake"
+    "/home/hariank/mARVin/catkin_ws/build/rosaria-master/catkin_generated/installspace/rosariaConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/rosaria-master/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosaria" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/src/rosaria-master/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -106,7 +106,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rosaria/RosAria"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosaria" TYPE EXECUTABLE FILES "/home/marvin/mARVin/catkin_ws/devel/lib/rosaria/RosAria")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rosaria" TYPE EXECUTABLE FILES "/home/hariank/mARVin/catkin_ws/devel/lib/rosaria/RosAria")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rosaria/RosAria" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rosaria/RosAria")
     file(RPATH_CHANGE

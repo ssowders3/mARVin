@@ -1,8 +1,8 @@
-# Install script for directory: /home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial
+# Install script for directory: /home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/marvin/mARVin/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hariank/mARVin/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial" TYPE FILE FILES "/home/marvin/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosserial" TYPE FILE FILES "/home/hariank/mARVin/catkin_ws/src/rosserial-melodic-devel/rosserial/package.xml")
 endif()
 
