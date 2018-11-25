@@ -42,6 +42,7 @@ void getCmdOut(const char* cmd) {
                 result += temp;
                 latitude = atof(temp.substr(14,13).c_str())/100;
                 longitude = -1*atof(temp.substr(28,14).c_str())/100;
+
                 altitude = atof(temp.substr(49,5).c_str());
                 navStatus.status = atoi(temp.substr(7,1).c_str());
                 navStatus.service = 1;
@@ -69,7 +70,11 @@ int main( int argc, char **argv)
     while ( ros::ok())
     {
         header.stamp = ros::Time::now();
+<<<<<<< HEAD
         header.frame_id = "base_link";
+=======
+        header.frame_id = 1;
+>>>>>>> 30e04764ca66900db521710c6b8b497a7ce2c3e7
         sensor_msgs::NavSatFix msg;
         msg.position_covariance[0] = pow(hdop,2);
         msg.position_covariance[4] = pow(hdop,2);

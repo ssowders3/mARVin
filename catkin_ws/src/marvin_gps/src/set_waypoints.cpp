@@ -30,6 +30,7 @@ ros::Publisher wpPub;
 int counter = 0;
 
 vector<vector<float>> getwaypoints() {
+
     /*
     ifstream file("~/mARVin/catkin_ws/src/marvin_gps/src/gtriTest1.txt");
     cout << file.is_open() << "\n";
@@ -58,6 +59,7 @@ vector<vector<float>> getwaypoints() {
     waypointPath[3][0] =33.78075;
     waypointPath[3][1] =-84.40150;
     waypointPath[3][2] =288.5;
+
     return waypointPath;
     /*
 
@@ -102,6 +104,7 @@ int main( int argc, char **argv)
     ros::Publisher gpsPub = n.advertise<sensor_msgs::NavSatFix>("fix", 10);
 
     cout << "getting waypoints. \n";
+
     vector<vector<float>> waypointPath = getwaypoints();
 
     sensor_msgs::NavSatStatus navStatus;

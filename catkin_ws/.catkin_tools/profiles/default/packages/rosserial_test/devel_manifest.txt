@@ -1,0 +1,4 @@
+rosserial-melodic-devel/rosserial_test
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_test/lib/pkgconfig/rosserial_test.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_test.pc
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_test/cmake/rosserial_testConfig-version.cmake
+/home/aalla/mARVin/catkin_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosserial_test/cmake/rosserial_testConfig.cmake
