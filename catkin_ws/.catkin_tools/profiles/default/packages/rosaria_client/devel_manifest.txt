@@ -1,0 +1,11 @@
+rosaria_client-master
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/pkgconfig/rosaria_client.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/rosaria_client.pc
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/spin_clockwise /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/spin_clockwise
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/spin_counterclockwise /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/spin_counterclockwise
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/enable_motors /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/enable_motors
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/go_three_second /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/go_three_second
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/print_state /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/print_state
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/interface /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/interface
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/teleop /home/aalla/mARVin/catkin_ws/devel/lib/rosaria_client/teleop
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/share/rosaria_client/cmake/rosaria_clientConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosaria_client/cmake/rosaria_clientConfig.cmake
+/home/aalla/mARVin/catkin_ws/devel/.private/rosaria_client/share/rosaria_client/cmake/rosaria_clientConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/rosaria_client/cmake/rosaria_clientConfig-version.cmake

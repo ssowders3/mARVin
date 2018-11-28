@@ -1,0 +1,13 @@
+<launch>
+
+   <master auto="start"/>
+
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find follow_waypoints)/config/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find follow_waypoints)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find follow_waypoints)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find follow_waypoints)/config/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find follow_waypoints)/config/base_local_planner.yaml" command="load" />
+ </node>
+
+</launch> 

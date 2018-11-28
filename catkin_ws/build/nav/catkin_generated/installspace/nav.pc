@@ -1,8 +1,0 @@
-prefix=/home/hariank/mARVin/catkin_ws/install
-
-Name: nav
-Description: Description of nav
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hariank/mARVin/catkin_ws/install/lib 
-Requires: 
