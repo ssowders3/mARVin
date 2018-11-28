@@ -7,12 +7,17 @@ raytrace_range: 3.0
 footprint: [[0.25,0.22], [-0.36,0.22], [-0.36,-0.22], [0.25,-0.22], [0.25,0.22]]
 plugins:
     - {name: range_sensor_layer,       type: "range_sensor_layer::RangeSensorLayer"}
+    - {name: obstacles,       type: "costmap_2d::VoxelLayer"}
     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
 
 range_sensor_layer:
   no_readings_timeout: 2.0
   ns: "/"
   topics: ["lidar1"]
+
+obstacles:
+  observation_sources: /camera/depth/color/points
+  /camera/depth/color/points: {data_type: PointCloud2, sensor_frame: /camera_depth_optical_frame, clearing: true, marking: true, topic: /camera/depth/color/points}
 
 inflation_layer:
   inflation_radius: 0.3
