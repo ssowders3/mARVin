@@ -52,9 +52,17 @@ catkin_package(
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${catkin_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME}/utm_odometry_node src/utm_odometry_node.cpp)
+add_executable(${PROJECT_NAME}/utm_odometry_path_init_node src/utm_odometry_path_init_node.cpp)
 set_target_properties(${PROJECT_NAME}/utm_odometry_node PROPERTIES OUTPUT_NAME "utm_odometry_node")
+set_target_properties(${PROJECT_NAME}/utm_odometry_path_init_node PROPERTIES OUTPUT_NAME "utm_odometry_path_init_node")
 target_link_libraries(${PROJECT_NAME}/utm_odometry_node ${catkin_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}/utm_odometry_path_init_node ${catkin_LIBRARIES})
 add_dependencies(${PROJECT_NAME}/utm_odometry_node
+  ${PROJECT_NAME}_generate_messages_cpp 
+  ${catkin_EXPORTED_TARGETS} 
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+)
+add_dependencies(${PROJECT_NAME}/utm_odometry_path_init_node
   ${PROJECT_NAME}_generate_messages_cpp 
   ${catkin_EXPORTED_TARGETS} 
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -65,6 +73,11 @@ add_dependencies(${PROJECT_NAME}/utm_odometry_node
 #############
 
 install(TARGETS ${PROJECT_NAME}/utm_odometry_node
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+install(TARGETS ${PROJECT_NAME}/utm_odometry_path_init_node
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

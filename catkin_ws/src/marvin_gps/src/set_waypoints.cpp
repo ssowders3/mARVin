@@ -48,7 +48,7 @@ vector<vector<float>> getwaypoints() {
     waypointPath[0][1] = -84.40154;
     waypointPath[0][2] = 288.5;
 
-    waypointPath[1][0] = 33.78083;
+    waypointPath[1][0] = 33.78081;
     waypointPath[1][1] = -84.40132;
     waypointPath[1][2] = 288.5;
 
