@@ -204,3 +204,7 @@ include_directories(
 add_executable(lidar1 src/lidar1.cpp)
 target_link_libraries(lidar1 ${catkin_LIBRARIES})
 add_dependencies(lidar1 nav_generate_messages_cpp)
+
+add_executable(joystick src/joystick.cpp)
+target_link_libraries(joystick ${catkin_LIBRARIES})
+add_dependencies(joystick nav_generate_messages_cpp)
