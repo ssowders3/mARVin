@@ -21,7 +21,7 @@ catkin_python_setup()
 
 catkin_package(
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS actionlib geometry_msgs move_base_msgs rospy smach std_msgs
+  CATKIN_DEPENDS actionlib geometry_msgs move_base_msgs rospy smach std_msgs gps_common marvin_gps nav_msgs razor_imu_9dof
 )
 
 catkin_install_python(

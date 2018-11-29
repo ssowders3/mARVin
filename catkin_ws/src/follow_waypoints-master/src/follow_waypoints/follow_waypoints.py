@@ -3,18 +3,27 @@
 import threading
 import rospy
 import actionlib
+import numpy as np
+from tf.transformations import quaternion_from_euler
 
 from smach import State,StateMachine
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from geometry_msgs.msg import PoseWithCovarianceStamped, PoseArray
-from std_msgs.msg import Empty
+from nav_msgs.msg import Odometry
+from std_msgs.msg import Empty, Header
+from sensor_msgs.msg import NavSatStatus, NavSatFix
+
 
 waypoints = []
+utm_init = False
+gps_waypoints = np.array([[-84.40154,33.78081, 288.5, 270], [-84.40132, 33.78081, 288.5, 180], \
+                     [-84.40132,33.78075, 288.5, 90], [-84.40150, 33.78075, 288.5, 90]], dtype=float)
+deg2rad = 22*180/7
 
 class FollowPath(State):
     def __init__(self):
         State.__init__(self, outcomes=['success'], input_keys=['waypoints'])
-        self.frame_id = rospy.get_param('~goal_frame_id','map')
+        self.frame_id = rospy.get_param('~goal_frame_id','odom')
         # Get a move_base action client
         self.client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
         rospy.loginfo('Connecting to move_base...')
@@ -119,15 +128,70 @@ class PathComplete(State):
         rospy.loginfo('###############################')
         return 'success'
 
+def utm_cb(msgIn):
+    global wp_num,deg2rad        
+    # recieve waypoint converted to odom
+    rospy.loginfo("converted waypoint recieved.")
+    posCovStamped = PoseWithCovarianceStamped()
+    posCovStamped.pose = msgIn.pose
+    posCovStamped.header = msgIn.header
+
+    # add in des orientation
+    q = quaternion_from_euler(0,0,gps_waypoints[wp_num][3]*deg2rad)
+    posCovStamped.pose.pose.orientation.x = q[0]
+    posCovStamped.pose.pose.orientation.y = q[1]
+    posCovStamped.pose.pose.orientation.z = q[2]
+    posCovStamped.pose.pose.orientation.w = q[3]
+
+    # append to global waypoint array
+    waypoints.append(posCovStamped)
+
+def init_path():
+    # logitude, latitute, altitute, orientation (+deg)
+    gpsPub = rospy.Publisher("/fix_path_init", NavSatFix, queue_size=10)
+    wpSub = rospy.Subscriber("/gps_path_init",Odometry, utm_cb)
+    navStatus = NavSatStatus()
+    navStatus.service = 1
+    navStatus.status = 1
+
+    # waypoints hardcoded for now, may want to spec with argument in future
+    
+    num_wp = gps_waypoints.shape[0]
+    
+    hdop = 1.5
+    position_covariance_type = 1
+
+    global wp_num
+
+    for i in range(0,num_wp):
+        # send gps waypoint for conversion
+        header = Header()
+        header.stamp = rospy.Time.now()
+        header.frame_id = 'base_link'
+        
+        msgOut = NavSatFix()
+        msgOut.position_covariance[0] = hdop**2
+        msgOut.position_covariance[4] = hdop**2
+        msgOut.position_covariance[8] = (2*hdop)**2
+        msgOut.longitude = gps_waypoints[i][0]
+        msgOut.latitude = gps_waypoints[i][1]
+        msgOut.altitude = gps_waypoints[i][2]
+        msgOut.position_covariance_type = position_covariance_type
+        msgOut.status = navStatus
+        msgOut.header = header
+        wp_num = i
+        gpsPub.publish(msgOut)
+
 def main():
     rospy.init_node('follow_waypoints')
-
+    init_path()
     sm = StateMachine(outcomes=['success'])
 
     with sm:
-        StateMachine.add('GET_PATH', GetPath(),
-                           transitions={'success':'FOLLOW_PATH'},
-                           remapping={'waypoints':'waypoints'})
+        # Not using this for now. 
+        #StateMachine.add('GET_PATH', GetPath(),
+        #                   transitions={'success':'FOLLOW_PATH'},
+        #                   remapping={'waypoints':'waypoints'})
         StateMachine.add('FOLLOW_PATH', FollowPath(),
                            transitions={'success':'PATH_COMPLETE'},
                            remapping={'waypoints':'waypoints'})

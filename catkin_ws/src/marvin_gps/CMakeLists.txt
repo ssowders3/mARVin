@@ -208,7 +208,6 @@ find_package(Threads REQUIRED)
 
 add_executable(gpsNode src/gpsNode.cpp)
 add_executable(set_waypoints src/set_waypoints.cpp)
-
 target_link_libraries(gpsNode ${catkin_LIBRARIES} Threads::Threads)
 target_link_libraries(set_waypoints ${catkin_LIBRARIES})
 

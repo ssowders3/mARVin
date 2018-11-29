@@ -272,12 +272,12 @@ boolean output_errors = false;  // true or false
 // For the M0, only the extended magnetometer calibration seems to be really necessary if DEBUG__USE_DMP_M0 is set to true...
 // Accelerometer
 // "accel x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
-float ACCEL_X_MIN = -291;
-float ACCEL_X_MAX = 254;
-float ACCEL_Y_MIN = -279;
-float ACCEL_Y_MAX = 281;
-float ACCEL_Z_MIN = -318;
-float ACCEL_Z_MAX = 234;
+float ACCEL_X_MIN = -279;
+float ACCEL_X_MAX = 256;
+float ACCEL_Y_MIN = -260;
+float ACCEL_Y_MAX = 274;
+float ACCEL_Z_MIN = -297;
+float ACCEL_Z_MAX = 241;
 
 // Magnetometer (standard calibration mode)
 // "magn x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
@@ -296,9 +296,9 @@ float magn_ellipsoid_transform[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
 
 // Gyroscope
 // "gyro x,y,z (current/average) = .../OFFSET_X  .../OFFSET_Y  .../OFFSET_Z
-float GYRO_AVERAGE_OFFSET_X = 23.19;
-float GYRO_AVERAGE_OFFSET_Y = 49.87;
-float GYRO_AVERAGE_OFFSET_Z = 3.65;
+float GYRO_AVERAGE_OFFSET_X = 30.22;
+float GYRO_AVERAGE_OFFSET_Y = 54.37;
+float GYRO_AVERAGE_OFFSET_Z = -10.07;
 
 /*
 // Calibration example:

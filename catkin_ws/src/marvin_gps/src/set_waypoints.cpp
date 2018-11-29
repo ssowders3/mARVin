@@ -29,7 +29,8 @@ using namespace std;
 ros::Publisher wpPub;
 int counter = 0;
 
-vector<vector<double>> getwaypoints() {
+vector<vector<float>> getwaypoints() {
+
     /*
     ifstream file("~/mARVin/catkin_ws/src/marvin_gps/src/gtriTest1.txt");
     cout << file.is_open() << "\n";
@@ -42,22 +43,23 @@ vector<vector<double>> getwaypoints() {
     int numLines = fileContents.size();
     cout << "Number of lines: " << numLines << "\n";
     */
-    vector<vector<double>> waypointPath(4, vector<double>(3,1));
-    waypointPath[0][0] = 33.78055;
-    waypointPath[0][1] = -84.40152;
-    waypointPath[0][2] = 283.7;
+    vector<vector<float>> waypointPath(4, vector<float>(3,1));
+    waypointPath[0][0] = 33.78081;
+    waypointPath[0][1] = -84.40154;
+    waypointPath[0][2] = 288.5;
 
-    waypointPath[1][0] = 33.78055;
-    waypointPath[1][1] = -84.40136;
-    waypointPath[1][2] = 283.2;
+    waypointPath[1][0] = 33.78081;
+    waypointPath[1][1] = -84.40132;
+    waypointPath[1][2] = 288.5;
 
-    waypointPath[2][0] =33.78082; 
-    waypointPath[2][1] =-84.40135;
-    waypointPath[2][2] =283.1;
+    waypointPath[2][0] =33.78074; 
+    waypointPath[2][1] =-84.40131;
+    waypointPath[2][2] =288.5;
 
-    waypointPath[3][0] =33.78083;
-    waypointPath[3][1] =-84.40152;
-    waypointPath[3][2] =283.9;
+    waypointPath[3][0] =33.78075;
+    waypointPath[3][1] =-84.40150;
+    waypointPath[3][2] =288.5;
+
     return waypointPath;
     /*
 
@@ -102,7 +104,8 @@ int main( int argc, char **argv)
     ros::Publisher gpsPub = n.advertise<sensor_msgs::NavSatFix>("fix", 10);
 
     cout << "getting waypoints. \n";
-    vector<vector<double>> waypointPath = getwaypoints();
+
+    vector<vector<float>> waypointPath = getwaypoints();
 
     sensor_msgs::NavSatStatus navStatus;
     navStatus.service = 1;
@@ -116,12 +119,12 @@ int main( int argc, char **argv)
     ros::Subscriber odomSub = n.subscribe("gps", 10, callback); 
     ros::Rate r(10);
     while(1) {
-    for (vector<vector<double>>::iterator it1 = waypointPath.begin(); it1 != waypointPath.end(); ++it1) {
-	longitude = (*it1)[0];
-	latitude = (*it1)[1];
+    for (vector<vector<float>>::iterator it1 = waypointPath.begin(); it1 != waypointPath.end(); ++it1) {
+	longitude = (*it1)[1];
+	latitude = (*it1)[0];
 	altitude = (*it1)[2];
 	header.stamp = ros::Time::now();
-	header.frame_id = 1;
+	header.frame_id = "base_link";
 	sensor_msgs::NavSatFix msg;
 	msg.position_covariance[0] = pow(hdop,2);
 	msg.position_covariance[4] = pow(hdop,2);
