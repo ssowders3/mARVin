@@ -2,9 +2,9 @@ map_type: costmap
 origin_z: 0.0
 z_resolution: 1
 z_voxels: 2
-obstacle_range: 12
+obstacle_range: 5.0
 raytrace_range: 3.0
-footprint: [[0.25,0.22], [-0.36,0.22], [-0.36,-0.22], [0.25,-0.22], [0.25,0.22]]
+footprint: [[0.6,0.45,], [0.6,-0.45], [-0.6,-0.45], [-0.6,0.45]]
 plugins:
     - {name: range_sensor_layer,       type: "range_sensor_layer::RangeSensorLayer"}
     - {name: obstacles,       type: "costmap_2d::VoxelLayer"}
