@@ -1,5 +1,0 @@
-gps_umd-master/gpsd_client
-/home/aalla/mARVin/catkin_ws/devel/.private/gpsd_client/share/gpsd_client/cmake/gpsd_clientConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/gpsd_client/cmake/gpsd_clientConfig.cmake
-/home/aalla/mARVin/catkin_ws/devel/.private/gpsd_client/share/gpsd_client/cmake/gpsd_clientConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/gpsd_client/cmake/gpsd_clientConfig-version.cmake
-/home/aalla/mARVin/catkin_ws/devel/.private/gpsd_client/lib/pkgconfig/gpsd_client.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/gpsd_client.pc
-/home/aalla/mARVin/catkin_ws/devel/.private/gpsd_client/lib/gpsd_client/gpsd_client /home/aalla/mARVin/catkin_ws/devel/lib/gpsd_client/gpsd_client

@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
   rosaria
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -46,11 +47,10 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+  FILES
+  waypoint.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -67,10 +67,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 ###################################
 ## catkin specific configuration ##
@@ -84,7 +84,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES turtle_test
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -118,19 +118,19 @@ add_executable(enable_motors src/enable_motors.cpp)
 # add_dependencies(turtle_test_node turtle_test_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(go_three_second 
+target_link_libraries(go_three_second
    ${catkin_LIBRARIES}
 )
 
-target_link_libraries(spin_counterclockwise 
+target_link_libraries(spin_counterclockwise
    ${catkin_LIBRARIES}
 )
 
-target_link_libraries(spin_clockwise 
+target_link_libraries(spin_clockwise
    ${catkin_LIBRARIES}
 )
 
-target_link_libraries(teleop 
+target_link_libraries(teleop
    ${catkin_LIBRARIES}
 )
 
