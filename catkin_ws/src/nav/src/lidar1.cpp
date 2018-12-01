@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
   ros::NodeHandle n;
   range_pub = n.advertise<sensor_msgs::Range>("lidar1", 50);
 
-  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
+  ros::Subscriber sub = n.subscribe("ld1", 1000, chatterCallback);
   ros::spin();
   return 0;
 }
