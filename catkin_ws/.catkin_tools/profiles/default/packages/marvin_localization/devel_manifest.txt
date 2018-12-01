@@ -1,4 +1,0 @@
-marvin_localization/marvin_localization
-/home/aalla/mARVin/catkin_ws/devel/.private/marvin_localization/lib/pkgconfig/marvin_localization.pc /home/aalla/mARVin/catkin_ws/devel/lib/pkgconfig/marvin_localization.pc
-/home/aalla/mARVin/catkin_ws/devel/.private/marvin_localization/share/marvin_localization/cmake/marvin_localizationConfig.cmake /home/aalla/mARVin/catkin_ws/devel/share/marvin_localization/cmake/marvin_localizationConfig.cmake
-/home/aalla/mARVin/catkin_ws/devel/.private/marvin_localization/share/marvin_localization/cmake/marvin_localizationConfig-version.cmake /home/aalla/mARVin/catkin_ws/devel/share/marvin_localization/cmake/marvin_localizationConfig-version.cmake
