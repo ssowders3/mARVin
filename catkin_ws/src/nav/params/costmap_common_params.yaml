@@ -1,0 +1,52 @@
+map_type: costmap
+origin_z: 0.0
+z_resolution: 1
+z_voxels: 2
+obstacle_range: 5.0
+raytrace_range: 3.0
+footprint: [[0.6,0.45,], [0.6,-0.45], [-0.6,-0.45], [-0.6,0.45]]
+plugins:
+    - {name: range_sensor_layer,       type: "range_sensor_layer::RangeSensorLayer"}
+    - {name: obstacles,       type: "costmap_2d::VoxelLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+range_sensor_layer:
+  no_readings_timeout: 2.0
+  ns: "/"
+  topics: ["lidar1"]
+
+obstacles:
+  observation_sources: /camera/depth/color/points
+  /camera/depth/color/points: {data_type: PointCloud2, sensor_frame: /camera_depth_optical_frame, clearing: true, marking: true, topic: /camera/depth/color/points}
+
+inflation_layer:
+  inflation_radius: 0.3
+
+
+# point_cloud_sensor: {sensor_frame: frame_name, data_type: PointCloud, topic: topic_name, marking: true, clearing: true}
+
+# map_type: voxel
+# origin_z: 0.0
+# z_resolution: 0.1
+# # z_resolution: 0.05
+# z_voxels: 10
+# unknown_threshold: 10
+# mark_threshold: 0
+# publish_voxel_map: true
+#
+# # My robot dimensions merged with RBX1
+# obstacle_range: 2.5
+# raytrace_range: 3.0
+# # This is supposed to be either/or footprint/robot_radius
+# footprint: [[0.25,0.22], [-0.36,0.22], [-0.36,-0.22], [0.25,-0.22], [0.25,0.22]]
+# # robot_radius: 0.40
+# inflation_radius: 0.40
+# max_obstacle_height: 1.0
+# min_obstacle_height: 0.0
+#
+# range_sensor_layer:
+#   clear_threshold: 0.46
+#   mark_threshold: 0.98
+#   no_readings_timeout: 2.0
+#   ns: /nav
+#   topics: ["lidar1"]

@@ -1,0 +1,10 @@
+<launch>
+
+  <node respawn="true" pkg="joy" type="joy_node" name="marvin_joy">
+    <param name="dev" type="string" value="/dev/input/js1" />
+    <param name="deadzone" value="0.12" />
+  </node>
+
+  <node pkg="nav" type="joystick" name="read_joystick"></node>
+
+</launch>
