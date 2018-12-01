@@ -1,0 +1,8 @@
+prefix=/home/hariank/mARVin/catkin_ws/devel
+
+Name: marvin_gps
+Description: Description of marvin_gps
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hariank/mARVin/catkin_ws/devel/lib 
+Requires: 
