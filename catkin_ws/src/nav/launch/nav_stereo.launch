@@ -1,6 +1,4 @@
 <launch>
-  <node name="static_tf0" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 /map /base_link 10"/>
-  <node name="static_tf2" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 /base_link /odom 10"/>
   <node name="static_tf3" pkg="tf" type="static_transform_publisher" args=".127 0 .2286 0 0 0 /base_link /camera_depth_frame 10"/>
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="controller_frequency" value="3.0" />
