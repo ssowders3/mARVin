@@ -1,9 +1,10 @@
 <launch>
-  <node name="static_tf0" pkg="tf" type="static_transform_publisher" args="2 0 0 0 0 0 /map /base_link 100"/>
-  <node name="static_tf1" pkg="tf" type="static_transform_publisher" args="1 0 0 0 0 0 /map /lidar1 100"/>
-  <node name="static_tf4" pkg="tf" type="static_transform_publisher" args="1 0 0 0 0 0 /map /camera/depth/color/points 100"/>
-  <node name="static_tf3" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 /base_link /camera_depth_frame 100"/>
+  <node name="static_tf1" pkg="tf" type="static_transform_publisher" args="0 .1651 0 0 0 .707 .707 /base_link /lidar1 10"/>
+  <node name="static_tf2" pkg="tf" type="static_transform_publisher" args="0 -.1651 0 0 0 -.707 .707 /base_link /lidar2 10"/>
+  <node name="static_tf3" pkg="tf" type="static_transform_publisher" args=".127 0 .2286 0 0 0 /base_link /camera_depth_frame 10"/>
+  <node name="static_tf4" pkg="tf" type="static_transform_publisher" args="0.1524 0 0 0 0 0 /base_link /sonar_frame 10"/>
   <node pkg="nav" type="lidar1" name="lidar1" />
+  <node pkg="nav" type="lidar2" name="lidar2" />
   <node pkg="rosserial_python" type="serial_node.py" name="mbed" args="/dev/ttyACM0" />
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <param name="controller_frequency" value="3.0" />
