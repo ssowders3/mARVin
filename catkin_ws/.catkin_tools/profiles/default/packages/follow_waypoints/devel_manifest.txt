@@ -1,5 +1,0 @@
-follow_waypoints-master
-/home/marvin/mARVin/catkin_ws/devel/.private/follow_waypoints/lib/pkgconfig/follow_waypoints.pc /home/marvin/mARVin/catkin_ws/devel/lib/pkgconfig/follow_waypoints.pc
-/home/marvin/mARVin/catkin_ws/devel/.private/follow_waypoints/lib/python2.7/dist-packages/follow_waypoints/__init__.py /home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/follow_waypoints/__init__.py
-/home/marvin/mARVin/catkin_ws/devel/.private/follow_waypoints/share/follow_waypoints/cmake/follow_waypointsConfig-version.cmake /home/marvin/mARVin/catkin_ws/devel/share/follow_waypoints/cmake/follow_waypointsConfig-version.cmake
-/home/marvin/mARVin/catkin_ws/devel/.private/follow_waypoints/share/follow_waypoints/cmake/follow_waypointsConfig.cmake /home/marvin/mARVin/catkin_ws/devel/share/follow_waypoints/cmake/follow_waypointsConfig.cmake
