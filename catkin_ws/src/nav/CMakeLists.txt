@@ -202,8 +202,11 @@ include_directories(
 # catkin_add_nosetests(test)
 
 add_executable(lidar1 src/lidar1.cpp)
+add_executable(lidar2 src/lidar2.cpp)
 target_link_libraries(lidar1 ${catkin_LIBRARIES})
+target_link_libraries(lidar2 ${catkin_LIBRARIES})
 add_dependencies(lidar1 nav_generate_messages_cpp)
+add_dependencies(lidar2 nav_generate_messages_cpp)
 
 add_executable(joystick src/joystick.cpp)
 target_link_libraries(joystick ${catkin_LIBRARIES})
