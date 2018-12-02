@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target enable_motors[0m
+[  7%] [32mBuilding CXX object CMakeFiles/enable_motors.dir/src/enable_motors.cpp.o[0m
+[35m[1mScanning dependencies of target teleop[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop.cpp.o[0m
+[ 21%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/enable_motors[0m
+[ 21%] Built target enable_motors
+[35m[1mScanning dependencies of target spin_clockwise[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/spin_clockwise.dir/src/spin_clockwise.cpp.o[0m
+[ 35%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/teleop[0m
+[35m[1mScanning dependencies of target print_state[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/print_state.dir/src/print_state.cpp.o[0m
+[ 42%] Built target teleop
+[35m[1mScanning dependencies of target spin_counterclockwise[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/spin_counterclockwise.dir/src/spin_counterclockwise.cpp.o[0m
+[ 57%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/spin_clockwise[0m
+[ 57%] Built target spin_clockwise
+[35m[1mScanning dependencies of target go_three_second[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/go_three_second.dir/src/go_three_second.cpp.o[0m
+[ 71%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/spin_counterclockwise[0m
+[ 71%] Built target spin_counterclockwise
+[35m[1mScanning dependencies of target interface[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/interface.dir/src/interface.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/print_state[0m
+[ 92%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/go_three_second[0m
+[ 92%] Built target print_state
+[ 92%] Built target go_three_second
+[100%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/rosaria_client/lib/rosaria_client/interface[0m
+[100%] Built target interface

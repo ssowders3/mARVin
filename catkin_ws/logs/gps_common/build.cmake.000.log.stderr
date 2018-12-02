@@ -1,0 +1,22 @@
+CMake Warning (dev) at CMakeLists.txt:54 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "gps_common/utm_odometry_node" is reserved or not valid for
+  certain CMake features, such as generator expressions, and may result in
+  undefined behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at CMakeLists.txt:55 (add_executable):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "gps_common/utm_odometry_path_init_node" is reserved or not
+  valid for certain CMake features, such as generator expressions, and may
+  result in undefined behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+

@@ -1,0 +1,10 @@
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/go_three_second
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/spin_clockwise
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/enable_motors
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/print_state
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/spin_counterclockwise
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/teleop
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/rosaria_client/interface
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/pkgconfig/rosaria_client.pc
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/rosaria_client/cmake/rosaria_clientConfig.cmake
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/rosaria_client/cmake/rosaria_clientConfig-version.cmake

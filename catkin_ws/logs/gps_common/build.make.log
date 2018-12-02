@@ -1,0 +1,108 @@
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  0%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  0%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target _gps_common_generate_messages_check_deps_GPSFix[0m
+[  0%] Built target _gps_common_generate_messages_check_deps_GPSFix
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_py[0m
+[  0%] Built target nav_msgs_generate_messages_py
+[35m[1mScanning dependencies of target _gps_common_generate_messages_check_deps_GPSStatus[0m
+[  0%] Built target _gps_common_generate_messages_check_deps_GPSStatus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_eus[0m
+[  0%] Built target nav_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  0%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[  0%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[  0%] Built target roscpp_generate_messages_nodejs
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_lisp[0m
+[  0%] Built target nav_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_cpp[0m
+[  0%] Built target nav_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[  0%] Built target roscpp_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_eus[0m
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_nodejs[0m
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target _catkin_empty_exported_target[0m
+[  0%] Built target _catkin_empty_exported_target
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[  0%] Built target roscpp_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  0%] Built target geometry_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_py[0m
+[  0%] Built target actionlib_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[  0%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_nodejs[0m
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_cpp[0m
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target gps_common_generate_messages_py[0m
+[  6%] [34m[1mGenerating Python from MSG gps_common/GPSStatus[0m
+[ 12%] [34m[1mGenerating Python from MSG gps_common/GPSFix[0m
+[ 18%] [34m[1mGenerating Python msg __init__.py for gps_common[0m
+[ 18%] Built target gps_common_generate_messages_py
+[35m[1mScanning dependencies of target gps_common_generate_messages_eus[0m
+[ 25%] [34m[1mGenerating EusLisp code from gps_common/GPSStatus.msg[0m
+[ 31%] [34m[1mGenerating EusLisp code from gps_common/GPSFix.msg[0m
+[ 37%] [34m[1mGenerating EusLisp manifest code for gps_common[0m
+[ 37%] Built target gps_common_generate_messages_eus
+[35m[1mScanning dependencies of target gps_common_generate_messages_lisp[0m
+[ 43%] [34m[1mGenerating Lisp code from gps_common/GPSStatus.msg[0m
+[ 50%] [34m[1mGenerating Lisp code from gps_common/GPSFix.msg[0m
+[ 50%] Built target gps_common_generate_messages_lisp
+[35m[1mScanning dependencies of target gps_common_generate_messages_nodejs[0m
+[ 56%] [34m[1mGenerating Javascript code from gps_common/GPSStatus.msg[0m
+[ 62%] [34m[1mGenerating Javascript code from gps_common/GPSFix.msg[0m
+[ 62%] Built target gps_common_generate_messages_nodejs
+[35m[1mScanning dependencies of target gps_common_generate_messages_cpp[0m
+[ 68%] [34m[1mGenerating C++ code from gps_common/GPSStatus.msg[0m
+[ 75%] [34m[1mGenerating C++ code from gps_common/GPSFix.msg[0m
+[ 75%] Built target gps_common_generate_messages_cpp
+[35m[1mScanning dependencies of target utm_odometry_path_init_node[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/gps_common/utm_odometry_path_init_node.dir/src/utm_odometry_path_init_node.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/gps_common/lib/gps_common/utm_odometry_path_init_node[0m
+[ 87%] Built target gps_common/utm_odometry_path_init_node
+[35m[1mScanning dependencies of target utm_odometry_node[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/gps_common/utm_odometry_node.dir/src/utm_odometry_node.cpp.o[0m
+[35m[1mScanning dependencies of target gps_common_generate_messages[0m
+[ 93%] Built target gps_common_generate_messages
+[100%] [32m[1mLinking CXX executable /home/marvin/mARVin/catkin_ws/devel/.private/gps_common/lib/gps_common/utm_odometry_node[0m
+[100%] Built target gps_common/utm_odometry_node

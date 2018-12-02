@@ -1,0 +1,7 @@
+nav
+/home/marvin/mARVin/catkin_ws/devel/.private/nav/lib/nav/joystick /home/marvin/mARVin/catkin_ws/devel/lib/nav/joystick
+/home/marvin/mARVin/catkin_ws/devel/.private/nav/lib/nav/lidar2 /home/marvin/mARVin/catkin_ws/devel/lib/nav/lidar2
+/home/marvin/mARVin/catkin_ws/devel/.private/nav/lib/nav/lidar1 /home/marvin/mARVin/catkin_ws/devel/lib/nav/lidar1
+/home/marvin/mARVin/catkin_ws/devel/.private/nav/lib/pkgconfig/nav.pc /home/marvin/mARVin/catkin_ws/devel/lib/pkgconfig/nav.pc
+/home/marvin/mARVin/catkin_ws/devel/.private/nav/share/nav/cmake/navConfig-version.cmake /home/marvin/mARVin/catkin_ws/devel/share/nav/cmake/navConfig-version.cmake
+/home/marvin/mARVin/catkin_ws/devel/.private/nav/share/nav/cmake/navConfig.cmake /home/marvin/mARVin/catkin_ws/devel/share/nav/cmake/navConfig.cmake

@@ -1,0 +1,3 @@
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_windows.pc
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/rosserial_windows/cmake/rosserial_windowsConfig-version.cmake
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/rosserial_windows/cmake/rosserial_windowsConfig.cmake

@@ -1,8 +1,0 @@
-prefix=/home/hariank/mARVin/catkin_ws/install
-
-Name: marvin_localization
-Description: Description of marvin_localization
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hariank/mARVin/catkin_ws/install/lib 
-Requires: 

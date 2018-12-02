@@ -1,0 +1,9 @@
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/marvin_gps/gpsNode
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/marvin_gps/set_waypoints
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/pkgconfig/marvin_gps.pc
+Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/marvin_gps/__init__.py
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/roseus/ros/marvin_gps/manifest.l
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/marvin_gps/cmake/marvin_gps-msg-paths.cmake
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/marvin_gps/cmake/marvin_gps-msg-extras.cmake
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/marvin_gps/cmake/marvin_gpsConfig-version.cmake
+Symlinking /home/marvin/mARVin/catkin_ws/devel/share/marvin_gps/cmake/marvin_gpsConfig.cmake
