@@ -15,9 +15,10 @@ range_sensor_layer:
   topics: ["lidar1"]
 
 obstacles:
-  observation_sources: /camera/depth/color/points /rosaria/sonar_pointcloud2
-  /camera/depth/color/points: {data_type: PointCloud2, sensor_frame: /camera_depth_optical_frame, clearing: true, marking: true, topic: /camera/depth/color/points, obstacle_range: 3.0}
-  /rosaria/sonar_pointcloud2: {data_type: PointCloud2, sensor_frame: /sonar_frame, clearing: true, marking: true, topic: /rosaria/sonar_pointcloud2, obstacle_range: 3.0}
+  observation_sources: realsense 
+  realsense: {data_type: LaserScan, sensor_frame: /camera_depth_frame, clearing: true, marking: true, topic: /scan, inf_is_valid: true, min_obstacle_height: .0, max_obstacle_height: 2.0}
 
 inflation_layer:
+  enabled: true
   inflation_radius: 0.1
+  cost_scaling_factor: 15.0
