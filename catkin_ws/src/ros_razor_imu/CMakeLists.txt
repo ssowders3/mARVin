@@ -30,5 +30,6 @@ install(DIRECTORY magnetometer_calibration
 catkin_install_python(PROGRAMS 
 	nodes/imu_node.py
 	nodes/display_3D_visualization.py
+        nodes/sensor_socket.py
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/nodes
 )

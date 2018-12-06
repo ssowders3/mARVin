@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import socket, traceback
 import rospy
 import string
