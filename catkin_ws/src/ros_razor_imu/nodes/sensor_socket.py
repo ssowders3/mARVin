@@ -52,8 +52,6 @@ while not rospy.is_shutdown():
         message, address = s.recvfrom(8192)
         temp = message.split(',')
         if len(temp) == 13:
-            print (temp[3])
-        
             # setting Linear Accel
             imuMsg.linear_acceleration.x = float(temp[2])
             imuMsg.linear_acceleration.y = float(temp[3])
