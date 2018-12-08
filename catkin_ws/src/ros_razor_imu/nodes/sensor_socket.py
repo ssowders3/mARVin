@@ -69,9 +69,10 @@ while not rospy.is_shutdown():
             imuMsg.angular_velocity.z = float(temp[8])
 
             # setting Orientation
-            yaw = float(temp[10])
+            yaw = math.fmod(float(temp[10]) + 20.0,360)
             pitch = float(temp[11])
             roll = float(temp[12])
+            
 
             q = quaternion_from_euler(roll,pitch,yaw)
             imuMsg.orientation.x = q[0]
