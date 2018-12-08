@@ -3,10 +3,7 @@
 
 <node pkg="gps_common" type="utm_odometry_node" name="utm_odometry_node" output="screen"/>
 
-<arg name="razor_config_file" default="$(find razor_imu_9dof)/config/my_razor.yaml"/>
-<node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
-  <rosparam file="$(arg razor_config_file)" command="load"/>
-</node>
+<node pkg="razor_imu_9dof" type="sensor_socket.py" name="imu_node" output="screen"/>
 
 <node pkg = "rosaria" type = "RosAria" name = "RosAria">
   <param name="port" value="/dev/ttyUSB0" type="string"/>

@@ -5,7 +5,7 @@
 #include <string>
 #include <unistd.h>
 #include <signal.h>
-#define KEYCODE_1 0x31 
+#define KEYCODE_1 0x31
 #define KEYCODE_2 0X32
 #define KEYCODE_3 0x33
 #define KEYCODE_4 0x34
@@ -16,7 +16,7 @@
 static struct termios new1, old;
 
 /* initializes the terminal to new input settings */
-void initTermios(int echo) 
+void initTermios(int echo)
 {
     tcgetattr(0, &old); /* grab old terminal i/o settings */
     new1 = old; /* make new settings same as old settings */
@@ -26,7 +26,7 @@ void initTermios(int echo)
 }
 
 /* Restore old terminal i/o settings */
-void resetTermios() 
+void resetTermios()
 {
     tcsetattr(0, TCSANOW, &old);
 }
@@ -46,11 +46,11 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "RosAria_interface");
 	ros::NodeHandle nh;
 
-  /* change the terminal input settings */ 
+  /* change the terminal input settings */
 	initTermios(0);
 
   /* greet user and display selection options */
-	std::cout  	
+	std::cout
 			<< "******************************************************************" << std::endl
 			<< "*                   ROSARIA CLIENT INTERFACE                     *" << std::endl
 			<< "*                                                                *" << std::endl
@@ -62,7 +62,9 @@ int main(int argc, char **argv)
 			<< "*       [4] teleop                                               *" << std::endl
 			<< "*       [5] enable/disable print_state                           *" << std::endl
 			<< "*       [6] enable_motors                                        *" << std::endl
-			<< "*       Press [Q] to close the interface                         *" << std::endl 
+			<< "*       [7] enter waypoints                                      *" << std::endl
+			<< "*       [8] enable autonomous mode                               *" << std::endl
+			<< "*       Press [Q] to close the interface                         *" << std::endl
 			<< "******************************************************************" << std::endl;
 
 	char select,a,b; /* vars to be used in switch statement */
@@ -77,11 +79,11 @@ int main(int argc, char **argv)
 			{
 				pid_t pid; /*gets the pid */
 				switch(pid = fork()) /* forks the process */
-				{ 
+				{
 					case 0: /* when pid == 0, we have the child process */
 						b = system("rosrun rosaria_client print_state"); /*run the print_state function */
 						exit(1); /* exit the child process */
-						break; 
+						break;
 				}
 				a = system("rosrun rosaria_client go_three_second"); /* run option 1*/
 				a = system("rosnode kill /print_aria_state "); /*kill the ros print_state node */
@@ -91,11 +93,11 @@ int main(int argc, char **argv)
 			{
 				pid_t pid; /*gets the pid */
 				switch(pid = fork()) /* forks the process */
-				{ 
+				{
 					case 0: /* when pid == 0, we have the child process */
 						b = system("rosrun rosaria_client print_state"); /*run the print_state function */
 						exit(1); /* exit the child process */
-						break; 
+						break;
 				}
 				a = system("rosrun rosaria_client spin_clockwise"); /* run option 2 */
 				a = system("rosnode kill /print_aria_state "); /*kill the ros print_state node */
@@ -105,11 +107,11 @@ int main(int argc, char **argv)
 			{
 				pid_t pid; /*gets the pid */
 				switch(pid = fork()) /* forks the process */
-				{ 
+				{
 					case 0: /* when pid == 0, we have the child process */
 						b = system("rosrun rosaria_client print_state"); /*run the print_state function */
 						exit(1); /* exit the child process */
-						break; 
+						break;
 				}
 				a = system("rosrun rosaria_client spin_counterclockwise"); /* run option 3 */
 				a = system("rosnode kill /print_aria_state "); /*kill the ros print_state node */
@@ -119,11 +121,11 @@ int main(int argc, char **argv)
 			{
 				pid_t pid; /*gets the pid */
 				switch(pid = fork()) /* forks the process */
-				{ 
+				{
 					case 0: /* when pid == 0, we have the child process */
 						b = system("rosrun rosaria_client print_state"); /*run the print_state function */
 						exit(1); /* exit the child process */
-						break; 
+						break;
 				}
 				a = system("rosrun rosaria_client teleop"); /* run option 4 */
 				a = system("rosnode kill /print_aria_state "); /*kill the ros print_state node */

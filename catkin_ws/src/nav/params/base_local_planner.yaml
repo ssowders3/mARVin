@@ -10,3 +10,5 @@ TrajectoryPlannerROS:
     acc_lim_y: 2.5
     
     holonomic_robot: true
+    dwa: true
+    global_frame_id: odom

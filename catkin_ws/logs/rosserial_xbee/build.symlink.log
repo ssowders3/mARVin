@@ -1,5 +1,0 @@
-Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/pkgconfig/rosserial_xbee.pc
-Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/rosserial_xbee/__init__.py
-Symlinking /home/marvin/mARVin/catkin_ws/devel/lib/python2.7/dist-packages/xbee/__init__.py
-Symlinking /home/marvin/mARVin/catkin_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake
-Symlinking /home/marvin/mARVin/catkin_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig.cmake

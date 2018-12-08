@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target range_sensor_layer_gencfg[0m
-[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/RangeSensorLayer.cfg: /home/marvin/mARVin/catkin_ws/devel/.private/range_sensor_layer/include/range_sensor_layer/RangeSensorLayerConfig.h /home/marvin/mARVin/catkin_ws/devel/.private/range_sensor_layer/lib/python2.7/dist-packages/range_sensor_layer/cfg/RangeSensorLayerConfig.py[0m
-Generating reconfiguration files for RangeSensorLayer in range_sensor_layer
-Wrote header file in /home/marvin/mARVin/catkin_ws/devel/.private/range_sensor_layer/include/range_sensor_layer/RangeSensorLayerConfig.h
-[ 33%] Built target range_sensor_layer_gencfg
-[35m[1mScanning dependencies of target range_sensor_layer[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/range_sensor_layer.dir/src/range_sensor_layer.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library /home/marvin/mARVin/catkin_ws/devel/.private/range_sensor_layer/lib/librange_sensor_layer.so[0m
-[100%] Built target range_sensor_layer
