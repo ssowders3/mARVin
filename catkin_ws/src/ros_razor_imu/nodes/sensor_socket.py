@@ -13,7 +13,7 @@ from dynamic_reconfigure.server import Server
 # Phone Orientation Guidelines
 # 1. Place phone flat against surface with screen face up for correct Z orientation
 # 2. top short side of phone = left side of y axis i.e. Left side up = +9.8 for Accel
-# 3. left long side of phone = front side of x axis i.e. front side down = -9.8 for Accel
+# 3. right long side of phone = front side of x axis i.e. front side down = -9.8 for Accel
 
 
 # Basic Socket Setup
@@ -59,7 +59,7 @@ while not rospy.is_shutdown():
         if len(temp) == 13 and ' 81' in temp:
             # setting Linear Accel
             # Value for X axis set to negative to fit with robot_localization expectation
-            imuMsg.linear_acceleration.x = -float(temp[2])
+            imuMsg.linear_acceleration.x = float(temp[2])
             imuMsg.linear_acceleration.y = float(temp[3])
             imuMsg.linear_acceleration.z = float(temp[4])
  
