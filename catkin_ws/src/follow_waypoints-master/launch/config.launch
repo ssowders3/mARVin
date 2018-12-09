@@ -2,21 +2,20 @@
 <node pkg="marvin_gps" type="gpsNode" name="gpsNode" output="screen"/>
 
 <node pkg="razor_imu_9dof" type="sensor_socket.py" name="imu_node" output="screen"/>
-
-<node pkg = "rosaria" type = "RosAria" name = "RosAria">
-  <param name="port" value="/dev/ttyUSB0" type="string"/>
-  <remap from="RosAria/cmd_vel" to="cmd_vel"/>
-</node>
+  <remap from="odom" to="odom_wheel"/>
+  <remap from="cmd_vel_mux/input/navi" to="cmd_vel"/>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
 
   <rosparam command="load" file="$(find robot_localization)/params/dual_ekf_navsat_example.yaml" />
 
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true">
 
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_map" clear_params="true">
-    <remap from="odometry/filtered" to="odom"/>
+        <remap from="odometry/filtered" to="odom_map"/>
   </node>
 
   <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform" clear_params="true" output="screen">
+        <remap from="odometry/filtered" to="odom_map"/>
   </node>
 
   <arg name="serial_no"             default=""/>

@@ -11,4 +11,4 @@ TrajectoryPlannerROS:
     
     holonomic_robot: true
     dwa: true
-    global_frame_id: odom
+    global_frame_id: map
