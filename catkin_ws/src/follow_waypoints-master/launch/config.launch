@@ -65,5 +65,5 @@
     <!-- Topic to which LaserScan will be published -->
     <remap from="scan" to="/scan"/>
   </node>
-  <node name="static_tf0" pkg="tf" type="static_transform_publisher" args=".127 0 .2286 0 0 0 /base_link /camera_depth_frame 10"/>
+  <node name="static_tf0" pkg="tf" type="static_transform_publisher" args=".117475 0 .2159 0 0 0 /base_link /camera_depth_frame 10"/>
 </launch>
