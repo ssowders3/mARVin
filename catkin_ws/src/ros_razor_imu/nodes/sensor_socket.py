@@ -17,7 +17,7 @@ from dynamic_reconfigure.server import Server
 
 
 # Basic Socket Setup
-host = '143.215.104.26'
+host = '143.215.105.230'
 port = 5555
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -69,7 +69,7 @@ while not rospy.is_shutdown():
             imuMsg.angular_velocity.z = float(temp[8])
 
             # setting Orientation
-            yaw = math.fmod(float(temp[10]) + 20.0,360)
+            yaw = math.fmod(float(temp[10]),360)
             pitch = float(temp[11])
             roll = float(temp[12])
             
@@ -82,7 +82,7 @@ while not rospy.is_shutdown():
          
             # Setting imuMsg data
             imuMsg.header.stamp = rospy.Time.now()
-            imuMsg.header.frame_id = 'base_footprint'
+            imuMsg.header.frame_id = 'base_link'
             imuMsg.header.seq = seq
             seq = seq+1
             pub.publish(imuMsg)

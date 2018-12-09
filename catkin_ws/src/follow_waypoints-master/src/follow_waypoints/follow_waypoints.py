@@ -147,6 +147,7 @@ def utm_cb(msgIn):
     waypoints.append(posCovStamped)
 
 def init_path():
+    '''
     # logitude, latitute, altitute, orientation (+deg)
     gpsPub = rospy.Publisher("/fix_path_init", NavSatFix, queue_size=10)
     wpSub = rospy.Subscriber("/gps_path_init",Odometry, utm_cb)
@@ -181,7 +182,70 @@ def init_path():
         msgOut.header = header
         wp_num = i
         gpsPub.publish(msgOut)
+    '''
+    # recieve waypoint converted to odom
+    header = Header()
+    header.stamp = rospy.Time.now()
+    header.frame_id = 'odom'
+    rospy.loginfo("converted waypoint recieved.")
+    posCovStamped = PoseWithCovarianceStamped()
+    posCovStamped.pose.pose.position.x = 1.49570626227
+    posCovStamped.pose.pose.position.y = -3.75325216255
+    posCovStamped.pose.pose.position.z = 0.0
+    posCovStamped.header = header
 
+    # add in des orientation
+    q = [0,0,-0.562553077176,0.826761171899]
+    posCovStamped.pose.pose.orientation.x = q[0]
+    posCovStamped.pose.pose.orientation.y = q[1]
+    posCovStamped.pose.pose.orientation.z = q[2]
+    posCovStamped.pose.pose.orientation.w = q[3]
+
+    # append to global waypoint array
+    waypoints.append(posCovStamped)
+
+    # recieve waypoint converted to odom
+    header = Header()
+    header.stamp = rospy.Time.now()
+    header.frame_id = 'odom'
+    rospy.loginfo("converted waypoint recieved.")
+    posCovStamped = PoseWithCovarianceStamped()
+    posCovStamped.pose.pose.position.x = 0.675004706676
+    posCovStamped.pose.pose.position.y = -4.48899559846
+    posCovStamped.pose.pose.position.z = 0.0
+    posCovStamped.header = header
+
+    # add in des orientation
+    q = [0,0,-0.926960237471,0.375159590237]
+    posCovStamped.pose.pose.orientation.x = q[0]
+    posCovStamped.pose.pose.orientation.y = q[1]
+    posCovStamped.pose.pose.orientation.z = q[2]
+    posCovStamped.pose.pose.orientation.w = q[3]
+
+    # append to global waypoint array
+    waypoints.append(posCovStamped)
+
+    # recieve waypoint converted to odom
+    header = Header()
+    header.stamp = rospy.Time.now()
+    header.frame_id = 'odom'
+    rospy.loginfo("converted waypoint recieved.")
+    posCovStamped = PoseWithCovarianceStamped()
+    posCovStamped.pose.pose.position.x = 0.0
+    posCovStamped.pose.pose.position.y = 0.0
+    posCovStamped.pose.pose.position.z = 0.0
+    posCovStamped.header = header
+
+    # add in des orientation
+    q = [0,0,0,0]
+    posCovStamped.pose.pose.orientation.x = q[0]
+    posCovStamped.pose.pose.orientation.y = q[1]
+    posCovStamped.pose.pose.orientation.z = q[2]
+    posCovStamped.pose.pose.orientation.w = q[3]
+
+    # append to global waypoint array
+    waypoints.append(posCovStamped)
+    
 def main():
     rospy.init_node('follow_waypoints')
     init_path()
@@ -196,6 +260,6 @@ def main():
                            transitions={'success':'PATH_COMPLETE'},
                            remapping={'waypoints':'waypoints'})
         StateMachine.add('PATH_COMPLETE', PathComplete(),
-                           transitions={'success':'GET_PATH'})
+                           transitions={'success':'FOLLOW_PATH'})
 
     outcome = sm.execute()

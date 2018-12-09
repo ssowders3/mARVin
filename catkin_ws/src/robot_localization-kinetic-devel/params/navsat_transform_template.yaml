@@ -3,7 +3,7 @@ frequency: 30
 
 # Delay time, in seconds, before we calculate the transform from the UTM frame to your world frame. This is especially
 # important if you have use_odometry_yaw set to true. Defaults to 0.
-delay: 3.0
+delay: 3
 
 # PLEASE READ: Like all nodes in robot_localization, this node assumes that your IMU data is reported in the ENU frame.
 # Many IMUs report data in the NED frame, so you'll want to verify that your data is in the correct frame before using
@@ -11,14 +11,14 @@ delay: 3.0
 
 # If your IMU does not account for magnetic declination, enter the value for your location here. If you don't know it,
 # see http://www.ngdc.noaa.gov/geomag-web/ (make sure to convert the value to radians). This parameter is mandatory.
-magnetic_declination_radians: 0
+magnetic_declination_radians: 0.08726646259
 
 # Your IMU's yaw, once the magentic_declination_radians value is added to it, should report 0 when facing east. If it
 # doesn't, enter the offset here. Defaults to 0.
-yaw_offset: 0.0
+yaw_offset: 0.17453292519
 
 # If this is true, the altitude is set to 0 in the output odometry message. Defaults to false.
-zero_altitude: false
+zero_altitude: true
 
 # If this is true, the transform world_frame->utm transform is broadcast for use by other nodes. Defaults to false.
 broadcast_utm_transform: false
@@ -44,5 +44,4 @@ wait_for_datum: false
 # Instead of using the first GPS location and IMU-based heading for the local-frame origin, users can specify the
 # origin (datum) using this parameter. The fields in the parameter represent latitude and longitude in decimal degrees,
 # and heading in radians. As navsat_transform_node assumes an ENU standard, a 0 heading corresponds to east.
-datum: [55.944904, -3.186693, 0.0]
 

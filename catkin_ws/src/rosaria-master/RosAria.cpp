@@ -572,7 +572,7 @@ void RosAriaNode::publish()
   odom_trans.transform.translation.z = 0.0;
   odom_trans.transform.rotation = tf::createQuaternionMsgFromYaw(pos.getTh()*M_PI/180);
   
-  odom_broadcaster.sendTransform(odom_trans);
+  //odom_broadcaster.sendTransform(odom_trans);
   
   // getStallValue returns 2 bytes with stall bit and bumper bits, packed as (00 00 FrontBumpers RearBumpers)
   int stall = robot->getStallValue();

@@ -39,13 +39,16 @@ void getCmdOut(const char* cmd) {
         if (fgets(buffer.data(), 128, pipe.get()) != nullptr) {
             temp = buffer.data();
             if (temp.find("GPGGA") != std::string::npos) {
+                try {
                 result += temp;
                 latitude = atof(temp.substr(14,13).c_str())/100;
                 longitude = -1*atof(temp.substr(28,14).c_str())/100;
-
                 altitude = atof(temp.substr(49,5).c_str());
                 navStatus.status = atoi(temp.substr(7,1).c_str());
                 navStatus.service = 1;
+                } catch (...) {
+
+                }
             }
         }
     }
@@ -55,8 +58,8 @@ void getCmdOut(const char* cmd) {
 int main( int argc, char **argv)
 {
     // change password for your computer
-    system("echo Juan0328! | sudo -S adb kill-server");
-    system("echo Juan0328! | sudo -S adb start-server");
+    system("echo marvin | sudo -S adb kill-server");
+    system("echo marvin | sudo -S adb start-server");
     system("adb devices");
     system("adb forward tcp:20175 tcp:50000");
     ros::init(argc, argv, "gpsNode");
